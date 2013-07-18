@@ -21,7 +21,6 @@ class EloSection extends \Illuminate\Cache\Section {
 	 * @return void
 	 */
 	public function flush() {
-		$this->store->increment($this->sectionKey());
 		unlink($this->store->getDirectory());
 	}
 }
