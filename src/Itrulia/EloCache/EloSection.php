@@ -21,6 +21,8 @@ class EloSection extends \Illuminate\Cache\Section {
 	 * @return void
 	 */
 	public function flush() {
-		unlink($this->store->getDirectory());
+		if ( file_exists($this->store->getDirectory()) ) {
+			unlink($this->store->getDirectory());
+		}
 	}
 }
