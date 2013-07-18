@@ -11,7 +11,7 @@ Add `itrulia/elo-cache` to `composer.json`.
 Run `composer update` to pull down the latest version of EloCache. Now open up `app/config/app.php` and add the service provider to your `providers` array.
 
     'providers' => array(
-        'Itrulia\Minimalist\EloCacheServiceProvider',
+        'Itrulia\EloCache\EloCacheServiceProvider',
     )
 
 ## Usage
