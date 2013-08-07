@@ -16,4 +16,4 @@ Run `composer update` to pull down the latest version of EloCache. Now open up `
 
 ## Usage
 
-Use it as you would normally do.
+You can use [sections](http://laravel.com/docs/cache#cache-sections "Laravel Sections") now with file based cache. 
